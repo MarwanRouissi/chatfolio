@@ -1,0 +1,8 @@
+<div id="<%= dom_id(message) %>" class="message">
+  <%= turbo_stream_from dom_id(message) %>
+
+  <p class="user-question"><%= message.user_question %></p>
+  <div class="ai-answer">
+    <%= message.ai_answer.present? ? markdown_to_html(message.ai_answer) : "🤔" %>
+  </div>
+</div>
