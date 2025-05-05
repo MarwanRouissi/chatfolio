@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
     respond_to do |format|
       format.turbo_stream do
         render turbo_stream: [
-          turbo_stream.prepend("messages", partial: "messages/message", locals: { message: message }),
+          turbo_stream.append("messages", partial: "messages/message", locals: { message: message }),
           turbo_stream.replace("message_form", partial: "messages/form", locals: { message: Message.new })
         ]
       end
