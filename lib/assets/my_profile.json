@@ -1,0 +1,244 @@
+{
+  "system_content": "You are an assistant designed to help recruiters by answering their questions about a candidate's profile. You will be provided with a JSON file containing the candidate's information. Your task is to extract relevant information from this JSON file and provide concise answers to the recruiter's questions. You should not include any personal opinions or additional information that is not present in the JSON file.",
+  "name": "Marwan Rouissi",
+  "title": "Développeur Web",
+  "contact": {
+    "email": "rouissi-marwan@hotmail.fr"
+  },
+  "personal_information": {
+    "name": "Marwan Rouissi",
+    "age": 33,
+    "location": "Marseille, France",
+    "nationality": "Française",
+    "languages": [
+      {"language": "Français", "level": "Natif"},
+      {"language": "Anglais", "level": "Intermédiaire"},
+      {"language": "Arabe", "level": "Intermédiaire"}
+    ]
+  },
+  "interests": [
+    "Développement Web",
+    "Intelligence Artificielle",
+    "Musique",
+    "Psychologie",
+    "Jeux Vidéo"
+  ],
+  "hobbies": [
+    "Guitare",
+    "Piano",
+    "Voyages",
+    "Randonnée",
+    "Photographie"
+  ],
+  "social_media": {
+    "linkedin": "https://www.linkedin.com/in/marwan-rouissi",
+    "github": ""
+  },
+  "website": "https://marwan-rouissi.site",
+  "summary": "Développeur passionné par le développement web et l'intelligence artificielle, je suis en reconversion professionnelle après une licence en psychologie et musicologie. Je suis motivé par l'apprentissage continu et la création de projets innovants.",
+  "objective": "Je cherche à rejoindre une entreprise dynamique où je peux mettre en pratique mes compétences en développement web et contribuer à des projets passionnants. Mon objectif est de devenir un expert dans le domaine du développement backend et de l'intelligence artificielle.",
+  "availability": "Disponible immédiatement",
+  "driving_license": {
+    "type": "B"
+  },
+  "portfolio": [
+    {
+      "title": "AI Duel",
+      "description": "Développement d'un aggrégateur de LLMs avec multiples appels d'APIs en simultané",
+      "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
+      "link": ""
+    },
+    {
+      "title": "Charact'rBnB",
+      "description": "Développement d'un rbnb-like",
+      "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+      "link": ""
+    }
+  ],
+  "education": {
+    "degree": "Bachelor IT",
+    "establishment": "La Plateforme",
+    "year": 2024,
+    "specialization": "Développement IA",
+    "courses": [
+      {
+        "title": "Développement Web",
+        "duration": "6 mois",
+        "description": "Formation intensive en développement web, incluant HTML, CSS, JavaScript, Ruby on Rails."
+      },
+      {
+        "title": "Intelligence Artificielle",
+        "duration": "6 mois",
+        "description": "Formation sur les concepts fondamentaux de l'IA, y compris le machine learning et le deep learning."
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "title": "Certification Concepteur et développeur d'applications Web et mobiles",
+      "establishment": "Le Wagon",
+      "year": 2025,
+      "description": "Formation sur le développement d'applications web et mobiles, incluant des projets pratiques."
+    }
+  ],
+  "professional_experiences": {
+    "jobs": [
+      {
+        "title": "Développeur Backend",
+        "company": "Xtras",
+        "start_date": "2023-10",
+        "end_date": "2024-02",
+        "responsabilities": [
+          "Maintenance base de données PostgreSQL",
+          "Optimisation des performances de l'application en identifiant et en corrigeant les goulots d'étranglement",
+          "Création de scripts pour automatiser des tâches récurrentes et améliorer l'efficacité du processus de développement",
+          "Développement Python",
+          "Participation à la revue de code et proposition d'améliorations pour garantir la maintenabilité du code"
+        ]
+      },
+      {
+        "title": "Livreur",
+        "company": "Kyo Sushi",
+        "start_date": "2018-10",
+        "end_date": "2019-06",
+        "responsabilities": [
+          "Réaliser les livraisons en respectant les standards de qualité et les délais impératifs",
+          "Maintenir et entretenir un véhicule professionnel mis à disposition pendant le service",
+          "Gérer plusieurs commandes simultanément (jusqu'à 4-6 commandes selon la charge)",
+          "Gérer efficacement les interactions avec la clientèle, même dans des situations difficiles",
+          "Réceptionner et ranger les marchandises"
+        ]
+      },
+      {
+        "title": "Employé polyvalent",
+        "company": "Burger King",
+        "start_date": "2018-09",
+        "end_date": "2018-10",
+        "responsabilities": [
+          "Résolution efficace des problèmes et réclamations client",
+          "Maintenance d'une attitude courtoise même dans des situations difficiles",
+          "Gestion quotidienne des stocks et inventaires",
+          "Remplacement flexible sur différents postes selon les besoins",
+          "Adaptation rapide aux changements de situation ou de priorités"
+        ]
+      },
+      {
+        "title": "Distributeur",
+        "company": "Mediapost",
+        "start_date": "2018-06",
+        "end_date": "2018-07",
+        "responsabilities": [
+          "Réception et vérification des colis de documents publicitaires",
+          "Contrôle qualité des documents avant distribution",
+          "Gestion efficace des zones de distribution attribuées",
+          "Établissement de rapports quotidiens détaillés",
+          "Documentation précise des anomalies ou problèmes rencontrés"
+        ]
+      },
+      {
+        "title": "Employé polyvalent",
+        "company": "KFC",
+        "start_date": "2017-10",
+        "end_date": "2018-04",
+        "responsabilities": [
+          "Préparation et expédition des commandes",
+          "Entretien rigoureux des espaces de travail, intérieurs et extérieurs",
+          "Aide et formation des nouveaux collaborateurs",
+          "Organisation et maintien de l'ordre dans les zones de travail",
+          "Participation active à l'amélioration des processus internes"
+        ]
+      },
+      {
+        "title": "Serveur",
+        "company": "Au Vieux Port",
+        "start_date": "2010-10",
+        "end_date": "2011-07",
+        "responsabilities": [
+          "Anticipation des besoins sans être intrusif",
+          "Attribution optimale des tables selon la capacité et l'affluence",
+          "Adaptation du service selon le type de clientèle (familles, groupes, professionnels)",
+          "Prise de commande précise et attentive",
+          "Coordination efficace avec la cuisine pour les modifications spéciales"
+        ]
+      }
+    ],
+    "personal_projects": [
+      {
+        "title": "AI Duel",
+        "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
+        "description": "Développement d'un aggrégateur de LLMs avec multiples appels d'APIs en simultané"
+      },
+      {
+        "title": "Charact'rBnB",
+        "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+        "description": "Développement d'un rbnb-like"
+      }
+    ]
+  },
+  "technical_skills": {
+    "programmation": [
+      {"technology": "Ruby", "level": "Expert"},
+      {"technology": "JavaScript", "level": "Advance"},
+      {"technology": "Python", "level": "Intermédiaire"}
+    ],
+    "frameworks": [
+      {"technology": "Ruby on Rails", "level": "Expert"},
+      {"technology": "Flask", "level": "Advance"},
+      {"technology": "Stimulus", "level": "Intermédiaire"}
+    ],
+    "database": [
+      {"technology": "PostgreSQL", "level": "Expert"},
+      {"technology": "MySQL", "level": "Advance"}
+    ],
+    "tools": [
+      {"technology": "Heroku", "level": "Advance"},
+      {"technology": "Docker", "level": "Débutant"}
+    ]
+  },
+  "trainings": [
+    {
+      "diploma": "Concepteur et développeur d'applications Web et mobiles",
+      "establishment": "Le Wagon",
+      "year": 2025,
+      "specialization": "Développement Web"
+    },
+    {
+      "diploma": "Bachelor IT",
+      "establishment": "La Plateforme",
+      "year": 2024,
+      "specialization": "Développement IA"
+    },
+    {
+      "diploma": "Licence de Psychologie",
+      "establishment": "Université Aix-Marseille",
+      "year": 2022,
+      "specialization": "Psychologie"
+    },
+    {
+      "diploma": "Licence de Musicologie",
+      "establishment": "Université Aix-Marseille",
+      "year": 2016,
+      "specialization": "Musique"
+    }
+  ],
+  "career_goals": {
+    "short_term": [
+      "Parfaire la maîtrise de Ruby et Rails",
+      "Développer une bonne compréhension des bonnes pratiques de développement",
+      "Maîtriser les gems essentiels et les outils courants",
+      "Créer des projets personnels pour démontrer mes compétences"
+    ],
+    "medium_term": [
+      "Devenir expert dans un domaine spécifique (API ou backend)",
+      "Maîtriser les tests unitaires et d'intégration",
+      "Développer un réseau professionnel solide",
+      "Créer des formations ou tutoriels"
+    ],
+    "long_term": [
+      "Devenir architecte logiciel",
+      "Contribuer à des projets open source majeurs",
+      "Développement de produits SaaS",
+      "Former d'autres développeurs"
+    ]
+  }
+}
