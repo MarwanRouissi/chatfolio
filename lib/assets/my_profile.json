@@ -1,19 +1,17 @@
 {
-  "system_content": "You are an assistant designed to help recruiters by answering their questions about a candidate's profile. You will be provided with a JSON file containing the candidate's information. Your task is to extract relevant information from this JSON file and provide concise answers to the recruiter's questions. You should not include any personal opinions or additional information that is not present in the JSON file.",
-  "name": "Marwan Rouissi",
-  "title": "Développeur Web",
-  "contact": {
-    "email": "rouissi-marwan@hotmail.fr"
-  },
+  "system_content": "You are an assistant designed to help recruiters by answering their questions about a candidate's profile. You will be provided with a JSON file containing the candidate's information. Your task is to extract relevant information from this JSON file and provide concise answers to the recruiter's questions. You should not include any personal opinions or additional information that is not present in the JSON file. Your responses should be clear and to the point, focusing solely on the information requested by the recruiter. If a question cannot be answered based on the provided JSON file, you should respond with 'I don't know'. You should also ensure that the JSON file is well-structured and contains all the necessary information about the candidate, including their personal information, education, work experience, skills, and any other relevant details. The JSON file should be formatted correctly to ensure easy parsing and extraction of information.",
   "personal_information": {
     "name": "Marwan Rouissi",
     "age": 33,
+    "title": "Développeur Web",
+    "contact": {
+      "email": "rouissi-marwan@hotmail.fr"
+    },
     "location": "Marseille, France",
     "nationality": "Française",
     "languages": [
       {"language": "Français", "level": "Natif"},
-      {"language": "Anglais", "level": "Intermédiaire"},
-      {"language": "Arabe", "level": "Intermédiaire"}
+      {"language": "Anglais", "level": "Intermédiaire"}
     ]
   },
   "interests": [
@@ -25,16 +23,15 @@
   ],
   "hobbies": [
     "Guitare",
-    "Piano",
-    "Voyages",
-    "Randonnée",
-    "Photographie"
+    "Jeux Vidéo",
+    "Puzzles",
+    "Observation de la nature",
+    "Méditation"
   ],
   "social_media": {
     "linkedin": "https://www.linkedin.com/in/marwan-rouissi",
-    "github": ""
+    "github": "https://github.com/MarwanRouissi"
   },
-  "website": "https://marwan-rouissi.site",
   "summary": "Développeur passionné par le développement web et l'intelligence artificielle, je suis en reconversion professionnelle après une licence en psychologie et musicologie. Je suis motivé par l'apprentissage continu et la création de projets innovants.",
   "objective": "Je cherche à rejoindre une entreprise dynamique où je peux mettre en pratique mes compétences en développement web et contribuer à des projets passionnants. Mon objectif est de devenir un expert dans le domaine du développement backend et de l'intelligence artificielle.",
   "availability": "Disponible immédiatement",
@@ -43,15 +40,30 @@
   },
   "portfolio": [
     {
+      "title": "Charact'rBnB",
+      "description": "Développement d'un rbnb-like",
+      "details": "Ce projet a été réalisé dans le cadre de ma formation au Wagon. Il s'agit d'une application web qui permet aux utilisateurs de réserver des personnages fictifs à la manière d'Airbnb. Les utilisateurs peuvent créer des annonces pour leurs personnages, gérer les réservations et communiquer avec les autres utilisateurs. L'application utilise Ruby on Rails pour le backend et PostgreSQL pour la base de données. J'ai également intégré des fonctionnalités de paiement en ligne et de messagerie entre utilisateurs. Ce projet m'a permis de renforcer mes compétences en développement web et de me familiariser avec les défis liés à la création d'une plateforme de réservation en ligne. J'ai également appris à travailler avec des APIs tierces pour intégrer des fonctionnalités de paiement et de messagerie, ce qui est essentiel pour le développement d'applications modernes. J'ai utilisé des technologies telles que Rails, PostgreSQL, Stimulus, Cloudinary et Heroku pour déployer l'application. Ce projet a été un excellent moyen de mettre en pratique mes compétences en développement web et de me familiariser avec les défis liés à la création d'une plateforme de réservation en ligne.",
+      "workflow": "J'ai utilisé une approche agile pour le développement de ce projet, en me concentrant sur la création d'une architecture solide et évolutive. J'ai commencé par définir les exigences fonctionnelles et non fonctionnelles de l'application, puis j'ai conçu la base de données et l'architecture du backend. J'ai ensuite développé les fonctionnalités principales de l'application, en intégrant des tests unitaires pour garantir la qualité du code. J'ai également mis en place un système de gestion des erreurs et des logs pour faciliter le débogage et la maintenance de l'application. Enfin, j'ai déployé l'application sur Heroku et j'ai configuré les environnements de production et de développement pour assurer une transition fluide entre les deux.",
+      "team": "J'ai travaillé en étroite collaboration avec d'autres développeurs et designers pour créer une expérience utilisateur cohérente et intuitive. Nous avons organisé des réunions régulières pour discuter des progrès, des défis rencontrés et des solutions possibles. J'ai également participé à des revues de code pour garantir la qualité du code et partager les meilleures pratiques au sein de l'équipe. Ce projet m'a permis de développer mes compétences en communication et en collaboration, ce qui est essentiel pour réussir dans le développement web moderne.",
+      "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+      "link": ""
+    },
+    {
       "title": "AI Duel",
       "description": "Développement d'un aggrégateur de LLMs avec multiples appels d'APIs en simultané",
+      "details": "Ce projet a été réalisé dans le cadre de ma formation au Wagon. Il s'agit d'une application web qui permet aux utilisateurs de comparer différents modèles de langage en temps réel. Les utilisateurs peuvent soumettre des requêtes et voir les réponses générées par plusieurs modèles simultanément. L'application utilise Ruby on Rails pour le backend et PostgreSQL pour la base de données. J'ai également intégré des fonctionnalités en temps réel avec WebSocket pour une expérience utilisateur fluide. Ce projet m'a permis de renforcer mes compétences en développement backend et d'explorer les possibilités offertes par les modèles de langage avancés. J'ai également appris à travailler avec des APIs tierces et à gérer des appels simultanés, ce qui est essentiel pour le développement d'applications modernes. J'ai utilisé des technologies telles que Rails, PostgreSQL, AJAX, WebSocket et Heroku pour déployer l'application. Ce projet a été un excellent moyen de mettre en pratique mes compétences en développement web et de me familiariser avec les défis liés à l'intégration d'APIs externes. J'ai également appris à optimiser les performances de l'application en identifiant et en corrigeant les goulots d'étranglement. Ce projet a été un véritable défi, mais il m'a permis de développer mes compétences techniques et de mieux comprendre le fonctionnement des modèles de langage avancés",
+      "workflow": "J'ai utilisé une approche agile pour le développement de ce projet, en me concentrant sur la création d'une architecture solide et évolutive. J'ai commencé par définir les exigences fonctionnelles et non fonctionnelles de l'application, puis j'ai conçu la base de données et l'architecture du backend. J'ai ensuite développé les fonctionnalités principales de l'application, en intégrant des tests unitaires pour garantir la qualité du code. J'ai également mis en place un système de gestion des erreurs et des logs pour faciliter le débogage et la maintenance de l'application. Enfin, j'ai déployé l'application sur Heroku et j'ai configuré les environnements de production et de développement pour assurer une transition fluide entre les deux.",
+      "team": "J'ai travaillé en étroite collaboration avec d'autres développeurs et designers pour créer une expérience utilisateur cohérente et intuitive. Nous avons organisé des réunions régulières pour discuter des progrès, des défis rencontrés et des solutions possibles. J'ai également participé à des revues de code pour garantir la qualité du code et partager les meilleures pratiques au sein de l'équipe. Ce projet m'a permis de développer mes compétences en communication et en collaboration, ce qui est essentiel pour réussir dans le développement web moderne.",
       "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
       "link": ""
     },
     {
-      "title": "Charact'rBnB",
-      "description": "Développement d'un rbnb-like",
-      "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+      "title": "Chatfolio",
+      "description": "Mon portfolio personnel développé avec Ruby on Rails",
+      "details": "Ce projet est un projet personnel que j'ai développé pour présenter mes compétences et mes réalisations en tant que développeur web. Il est construit avec Ruby on Rails et utilise PostgreSQL comme base de données. Le site implémente un chatbot qui répond aux questions des utilisateurs sur mes projets et mes compétences. J'ai utilisé des technologies modernes telles que Stimulus pour le frontend et AJAX pour les interactions en temps réel. J'ai également intégré des fonctionnalités de sécurité pour protéger les données des utilisateurs et garantir la confidentialité des informations. Ce projet m'a permis de mettre en pratique mes compétences en développement web et d'explorer les possibilités offertes par les modèles de langage avancés. J'ai également appris à travailler avec des APIs tierces et à gérer des appels simultanés, ce qui est essentiel pour le développement d'applications modernes. J'ai utilisé des technologies telles que Rails, PostgreSQL, Stimulus, AJAX, WebSocket et Heroku pour déployer le site. Ce projet a été un excellent moyen de mettre en pratique mes compétences en développement web et de me familiariser avec les défis liés à l'intégration d'APIs externes.",
+      "workflow": "J'ai utilisé une approche agile pour le développement de ce projet, en me concentrant sur la création d'une architecture solide et évolutive. J'ai commencé par définir les exigences fonctionnelles et non fonctionnelles du site, puis j'ai conçu la base de données et l'architecture du backend. J'ai ensuite développé les fonctionnalités principales du site, en intégrant des tests unitaires pour garantir la qualité du code. J'ai également mis en place un système de gestion des erreurs et des logs pour faciliter le débogage et la maintenance du site. Enfin, j'ai déployé le site sur Heroku et j'ai configuré les environnements de production et de développement pour assurer une transition fluide entre les deux.",
+      "team": "J'ai travaillé seul sur ce projet, mais j'ai consulté des ressources en ligne et des forums pour m'assurer que je respectais les meilleures pratiques de développement. J'ai également participé à des revues de code avec d'autres développeurs pour garantir la qualité du code et partager les meilleures pratiques. Ce projet m'a permis de développer mes compétences en communication et en collaboration, ce qui est essentiel pour réussir dans le développement web moderne.",
+      "technologies": ["Rails", "PostgreSQL", "Stimulus", "AJAX", "WebSocket", "Langchain", "Heroku"],
       "link": ""
     }
   ],
@@ -62,14 +74,14 @@
     "specialization": "Développement IA",
     "courses": [
       {
-        "title": "Développement Web",
-        "duration": "6 mois",
-        "description": "Formation intensive en développement web, incluant HTML, CSS, JavaScript, Ruby on Rails."
+        "title": "Tronc commun",
+        "duration": "1 an",
+        "description": "Formation générale en informatique, incluant des cours sur les bases de données, le développement web et la programmation. Mais également des cours sur l'IA et le machine learning. Ainsi des cours sur l'administration système."
       },
       {
         "title": "Intelligence Artificielle",
-        "duration": "6 mois",
-        "description": "Formation sur les concepts fondamentaux de l'IA, y compris le machine learning et le deep learning."
+        "duration": "1 an",
+        "description": "Formation spécialisée en IA, incluant des cours sur le machine learning, le deep learning et les réseaux de neurones. Mais également des cours sur l'éthique de l'IA et ses applications dans le monde réel."
       }
     ]
   },
@@ -78,7 +90,8 @@
       "title": "Certification Concepteur et développeur d'applications Web et mobiles",
       "establishment": "Le Wagon",
       "year": 2025,
-      "description": "Formation sur le développement d'applications web et mobiles, incluant des projets pratiques."
+      "specialization": "Développement Web",
+      "description": "Formation intensive de 9 semaines sur le développement d'applications web et mobiles, incluant des projets pratiques."
     }
   ],
   "professional_experiences": {
@@ -115,11 +128,11 @@
         "start_date": "2018-09",
         "end_date": "2018-10",
         "responsabilities": [
-          "Résolution efficace des problèmes et réclamations client",
-          "Maintenance d'une attitude courtoise même dans des situations difficiles",
-          "Gestion quotidienne des stocks et inventaires",
-          "Remplacement flexible sur différents postes selon les besoins",
-          "Adaptation rapide aux changements de situation ou de priorités"
+          "Préparation des commandes selon les standards de qualité et d'hygiène",
+          "Gestion des stocks et des inventaires",
+          "Formation des nouveaux employés sur les procédures internes",
+          "Assistance à la direction dans la gestion quotidienne du restaurant",
+          "Participation à l'amélioration continue des processus internes"
         ]
       },
       {
@@ -154,15 +167,20 @@
         "start_date": "2010-10",
         "end_date": "2011-07",
         "responsabilities": [
-          "Anticipation des besoins sans être intrusif",
-          "Attribution optimale des tables selon la capacité et l'affluence",
-          "Adaptation du service selon le type de clientèle (familles, groupes, professionnels)",
-          "Prise de commande précise et attentive",
-          "Coordination efficace avec la cuisine pour les modifications spéciales"
+          "Accueil chaleureux des clients et prise de commande efficace",
+          "Service rapide et attentionné, en veillant à la satisfaction des clients",
+          "Gestion des plaintes et des retours clients avec professionnalisme",
+          "Collaboration étroite avec l'équipe de cuisine pour assurer un service fluide",
+          "Entretien de la propreté et de l'organisation de la salle"
         ]
       }
     ],
     "personal_projects": [
+      {
+        "title": "Chatfolio",
+        "technologies": ["Rails", "PostgreSQL", "Stimulus", "AJAX", "WebSocket", "Langchain", "Heroku"],
+        "description": "Mon portfolio personnel développé avec Ruby on Rails"
+      },
       {
         "title": "AI Duel",
         "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
@@ -178,20 +196,34 @@
   "technical_skills": {
     "programmation": [
       {"technology": "Ruby", "level": "Expert"},
+      {"technology": "HTML", "level": "Expert"},
+      {"technology": "CSS", "level": "Expert"},
+      {"technology": "SQL", "level": "Expert"},
       {"technology": "JavaScript", "level": "Advance"},
       {"technology": "Python", "level": "Intermédiaire"}
     ],
     "frameworks": [
       {"technology": "Ruby on Rails", "level": "Expert"},
+      {"technology": "Bootstrap", "level": "Expert"},
+      {"technology": "Stimulus", "level": "Intermédiaire"},
       {"technology": "Flask", "level": "Advance"},
+      {"technology": "React", "level": "Intermédiaire"},
       {"technology": "Stimulus", "level": "Intermédiaire"}
     ],
     "database": [
       {"technology": "PostgreSQL", "level": "Expert"},
+      {"technology": "SQLite", "level": "Intermédiaire"},
       {"technology": "MySQL", "level": "Advance"}
     ],
     "tools": [
       {"technology": "Heroku", "level": "Advance"},
+      {"technology": "Git", "level": "Expert"},
+      {"technology": "GitHub", "level": "Expert"},
+      {"technology": "Postman", "level": "Intermédiaire"},
+      {"technology": "Figma", "level": "Intermédiaire"},
+      {"technology": "Trello", "level": "Intermédiaire"},
+      {"technology": "Slack", "level": "Intermédiaire"},
+      {"technology": "VS Code", "level": "Expert"},
       {"technology": "Docker", "level": "Débutant"}
     ]
   },
