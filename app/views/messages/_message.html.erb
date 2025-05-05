@@ -2,7 +2,13 @@
   <%= turbo_stream_from dom_id(message) %>
 
   <p class="user-question"><%= message.user_question %></p>
-  <div class="ai-answer">
-    <%= message.ai_answer.present? ? markdown_to_html(message.ai_answer) : "🤔" %>
+  <div class="ai-answer" data-controller="message">
+    <% if message.ai_answer.present? %>
+      <%= markdown_to_html(message.ai_answer)%>
+    <% else %>
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    <% end %>
   </div>
 </div>
