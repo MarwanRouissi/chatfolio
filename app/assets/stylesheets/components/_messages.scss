@@ -1,23 +1,45 @@
 .chatbot {
-  background: white;
-  margin-top: 9px;
-  height: calc(100vh - 75px);
-  display: flex;
+  background: $light-black;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  height: 85%;
+  font-family: monospace;
 
-  h1 {
-    border-bottom: 1px solid $gray-200;
-    margin-bottom: 0;
+  // h1 {
+  //   border-bottom: 1px solid $gray-200;
+  //   // margin-bottom: 0;
+  //   padding: 1rem;
+  //   font-size: 2rem;
+  //   text-align: center;
+  //   height: 10%;
+  // }
+
+  .chatbot-header {
+    padding: 1rem;
+    color: $white;
+    border-bottom: 1px solid $dark-gray;
+    font-family: cursive;
+  }
+  // .chatbot-header h1 {
+  //   font-size: 1.5rem;
+  //   margin: 0;
+  // }
+
+  #messages {
+    height: 70%;
     padding: 1rem;
   }
 
-  #messages {
-    height: 100%;
-    overflow: scroll;
-    padding: 1rem;
-    overflow-x: hidden;
+  .messages-scroll {
+    overflow-y: auto;
+    scrollbar-color: $dark-black $dark-gray;
+    scrollbar-width: thin;
   }
 
   .message {
@@ -36,21 +58,51 @@
 
   .user-question {
     align-self: flex-start;
-    background: $blue;
+    background: $dark-black;
     color: $light-gray;
   }
 
   .ai-answer {
     align-self: flex-end;
     background: $gray-200;
+    color: $dark-black;
   }
 
-  #new_question {
-    border-top: 1px solid $gray-200;
-    padding: 1rem;
+  .new_message {
+    border-top: 1px solid $dark-gray;
+    padding: 2rem;
+    // position: sticky;
+    // bottom: 0;
+    // height: 24%;
+    height: 10%;
 
     .form-group {
       margin-bottom: 0;
     }
+
+    textarea {
+      resize: none;
+    }
   }
+
+  .btn {
+    background: $dark-black;
+    color: $white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($dark-gray, 10%);
+    }
+  }
+}
+
+.form-floating {
+  display: flex;
+  background-color: $light-gray;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
