@@ -1,0 +1,64 @@
+.blackground {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 800px;
+  font-family: cursive;
+}
+
+.form-control {
+  color: $dark-black;
+  background-color: $light-gray;
+
+  &:focus {
+    background-color: $white;
+    color: $dark-black;
+    box-shadow: 0 0 0.2rem $dark-gray;
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    background-color: $dark-gray;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+
+  a {
+    color: $dark-gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    border-radius: 50%;
+    border: 1px solid #6c757d;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      color: darken($white, 10%);
+      background-color: darken($dark-gray, 10%)
+    }
+  }
+
+  button {
+    background-color: $dark-gray;
+    color: $white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($dark-gray, 10%);
+    }
+  }
+}
