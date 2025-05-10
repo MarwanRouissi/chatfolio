@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>My Projects</h1>
+  <div class="projects-list">
+    <% @projects.each do |project| %>
+      <%= link_to project_path(project), class: "text-decoration-none" do %>
+        <div class="project-card">
+          <%= image_tag "#{project.name}_cover.jpg" %>
+          <%= project.name %>
+        </div>
+      <% end %>
+    <% end %>
+</div>

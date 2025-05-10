@@ -12,17 +12,29 @@
           <% if user_signed_in? %>
             <li class="nav-item">
               <%= link_to root_path, class: "nav-link #{'active' if current_page?(root_path)}" do %>
-                <i class="fa-solid fa-house"></i>
+                <% if current_page?(root_path) %>
+                  <i class="fa-solid fa-house"></i>
+                <% else %>
+                  <i class="fa-solid fa-house-chimney"></i>
+                <% end %>
               <% end %>
             </li>
             <li class="nav-item active">
               <%= link_to messages_path, class: "nav-link #{'active' if current_page?(messages_path)}" do %>
-                <i class="fa-solid fa-message"></i>
+                <% if current_page?(messages_path) %>
+                  <i class="fa-solid fa-comment-dots"></i>
+                <% else %>
+                  <i class="fa-solid fa-comment"></i>
+                <% end %>
               <% end %>
             </li>
             <li class="nav-item">
-              <%= link_to "#", class: "nav-link #{'active' if current_page?("projects_path")}" do %>
-                <i class="fa-solid fa-folder"></i>
+              <%= link_to projects_path, class: "nav-link #{'active' if current_page?(projects_path)}" do %>
+                <% if current_page?(projects_path) %>
+                  <i class="fa-solid fa-folder-open"></i>
+                <% else %>
+                  <i class="fa-solid fa-folder"></i>
+                <% end %>
               <% end %>
             </li>
             <li class="nav-item">

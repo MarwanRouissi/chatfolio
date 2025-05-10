@@ -1,0 +1,147 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: $light-gray;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: $dark-black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid $dark-black;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: $light-gray;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    img {
+      filter: none;
+    }
+  }
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.project-details {
+  overflow: scroll;
+  max-height: 600px;
+  padding: 20px;
+  background-color: $light-gray;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  // text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  // overflow: hidden;
+  border: 2px solid $dark-black;
+  background: $light-black;
+  color: $white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-color: $dark-black $dark-gray;
+  scrollbar-width: thin;
+}
+
+.project-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: $light-gray;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.project-cover:hover {
+  filter: none;
+}
+
+.stack-icon {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+// Display project images as carrousel
+.project-images {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
+.project-images img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  border-radius: 5px;
+  // filter: $light-gray;
+  // filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.project-footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.project-footer a {
+  text-decoration: none;
+  color: $dark-black;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  border-radius: 50%;
+  border: 1px solid #6c757d;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    color: darken($dark-black, 10%);
+    background-color: darken($light-gray, 10%);
+    transition: background-color 0.3s;
+  }
+}
+
+// fit project details for mobile
+@media (max-width: 768px) {
+  .project-details {
+    max-height: 400px;
+  }
+}

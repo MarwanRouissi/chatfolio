@@ -1,0 +1,44 @@
+<div class="container">
+  <h1><%= @project.name %></h1>
+  <div class="project-details">
+    <p><%= @project.description %></p>
+    <div class="project-images">
+      <% 4.times do |i| %>
+        <%= image_tag "#{@project.name}_#{i + 1}.jpg", class: "project-image" %>
+      <% end %>
+    </div>
+    <% @project.technologies.each do |techno| %>
+      <%= image_tag Project.get_stack_icon(techno), class: "stack-icon" %>
+    <% end %>
+    <br>
+    <br>
+    <p>Features:</p>
+    <ul>
+      <% @project.features.each do |feature| %>
+        <li><%= feature %></li>
+      <% end %>
+    </ul>
+    <p>Challenges:</p>
+    <ul>
+      <% @project.challenges.each do |challenge| %>
+        <li><%= challenge %></li>
+      <% end %>
+    </ul>
+    <p>Potential Improvements:</p>
+    <ul>
+      <% @project.potential_improvements.each do |improvement| %>
+        <li><%= improvement %></li>
+      <% end %>
+    </ul>
+
+  </div>
+  <div class="project-links">
+    <%= link_to projects_path, class: "btn btn-outline-secondary btn-circle" do %>
+      <i class="fa-solid fa-arrow-left"></i>
+    <% end %>
+    <%= link_to "GitHub", @project.github_url, target: "_blank", class: "btn btn-outline-secondary" %>
+  </div>
+  <div class="project-footer">
+    <p>Created by 404 Fighters</p>
+    <p>© 2025 All rights reserved</p>
+</div>

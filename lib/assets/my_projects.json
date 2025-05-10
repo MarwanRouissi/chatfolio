@@ -9,7 +9,7 @@
       "image": "assets/images/ai_duel.png",
       "tags": ["AI", "Web App", "Community", "Voting", "Real-time"],
       "github_url": "https://github.com/MarwanRouissi/AI_Duel",
-      "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
+      "technologies": ["Rails", "PostgreSQL", "JavaScript", "HTML", "Sass", "APIs"],
       "features": [
         "User authentication",
         "Real-time updates",
@@ -29,7 +29,7 @@
         "Handling large volumes of data",
         "Optimizing performance"
       ],
-      "potential improvements": [
+      "potential_improvements": [
         "More LLMs: Integrate additional Language Learning Models (LLMs) to provide a more comprehensive comparison.",
         "Enhanced UI: Improve the user interface for better usability and aesthetics.",
         "Mobile Optimization: Ensure the application is fully responsive and optimized for mobile devices.",
@@ -45,7 +45,7 @@
       "image": "assets/images/charact_rbnb.png",
       "tags": ["Web App", "Booking", "Community", "Fictional Characters"],
       "github_url": "https://github.com/MarwanRouissi/charact_rbnb",
-      "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+      "technologies": ["Rails", "PostgreSQL", "JavaScript", "HTML", "Sass", "Bootstrap"],
       "features": [
         "User authentication",
         "Character listings",
@@ -64,7 +64,7 @@
         "Building a messaging system",
         "Managing user profiles"
       ],
-      "potential improvements": [
+      "potential_improvements": [
         "User Reviews: Allow users to leave reviews and ratings for characters they have booked.",
         "Community Features: Add features for users to discuss and share insights about the characters.",
         "Booking History: Implement a booking history feature for users to track their past bookings.",
