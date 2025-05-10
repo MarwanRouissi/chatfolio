@@ -8,7 +8,7 @@
       "url": "",
       "image": "assets/images/ai_duel.png",
       "tags": ["AI", "Web App", "Community", "Voting", "Real-time"],
-      "github": "",
+      "github_url": "https://github.com/MarwanRouissi/AI_Duel",
       "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
       "features": [
         "User authentication",
@@ -44,7 +44,7 @@
       "url": "",
       "image": "assets/images/charact_rbnb.png",
       "tags": ["Web App", "Booking", "Community", "Fictional Characters"],
-      "github": "",
+      "github_url": "https://github.com/MarwanRouissi/charact_rbnb",
       "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
       "features": [
         "User authentication",
