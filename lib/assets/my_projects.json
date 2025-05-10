@@ -1,0 +1,77 @@
+{
+  "name": "My Projects",
+  "description": "A collection of my projects",
+  "projects": [
+    {
+      "name": "AI Duel",
+      "description": "AI Duel is an innovative web application that allows users to compare different language models in real-time. Developed as part of my training at Le Wagon, this application aggregates multiple LLMs (Large Language Models) through simultaneous API calls to provide a seamless and interactive user experience.",
+      "url": "",
+      "image": "assets/images/ai_duel.png",
+      "tags": ["AI", "Web App", "Community", "Voting", "Real-time"],
+      "github": "",
+      "technologies": ["Rails", "PostgreSQL", "AJAX", "WebSocket", "APIs", "Heroku"],
+      "features": [
+        "User authentication",
+        "Real-time updates",
+        "Community voting system",
+        "AI model integration",
+        "Leaderboard",
+        "User profiles",
+        "Challenge history",
+        "Search functionality"
+      ],
+      "challenges": [
+        "Integrating multiple AI models",
+        "Real-time data synchronization",
+        "Building a scalable voting system",
+        "Ensuring user data privacy",
+        "Creating an engaging user interface",
+        "Handling large volumes of data",
+        "Optimizing performance"
+      ],
+      "potential improvements": [
+        "More LLMs: Integrate additional Language Learning Models (LLMs) to provide a more comprehensive comparison.",
+        "Enhanced UI: Improve the user interface for better usability and aesthetics.",
+        "Mobile Optimization: Ensure the application is fully responsive and optimized for mobile devices.",
+        "User Feedback: Implement a system for users to provide feedback on the AI models.",
+        "Community Features: Add features for users to discuss and share insights about the models.",
+        "Model Customization: Allow users to customize the parameters of the models for more tailored comparisons."
+      ]
+    },
+    {
+      "name": "Charact'rBnB",
+      "description": "Charact'rBnB is a web application inspired by Airbnb, but for booking fictional characters. Developed as part of my training at Le Wagon, this project allows users to create listings for their fictional characters, manage bookings, and communicate with other users. The application utilizes Ruby on Rails for the backend and PostgreSQL for the database.",
+      "url": "",
+      "image": "assets/images/charact_rbnb.png",
+      "tags": ["Web App", "Booking", "Community", "Fictional Characters"],
+      "github": "",
+      "technologies": ["Rails", "PostgreSQL", "Stimulus", "Cloudinary", "Heroku"],
+      "features": [
+        "User authentication",
+        "Character listings",
+        "Booking management",
+        "User profiles",
+        "Search functionality",
+        "Messaging system",
+        "Reviews and ratings"
+      ],
+      "challenges": [
+        "Implementing a booking system",
+        "Creating a user-friendly interface",
+        "Ensuring data integrity",
+        "Handling user-generated content",
+        "Optimizing search functionality",
+        "Building a messaging system",
+        "Managing user profiles"
+      ],
+      "potential improvements": [
+        "User Reviews: Allow users to leave reviews and ratings for characters they have booked.",
+        "Community Features: Add features for users to discuss and share insights about the characters.",
+        "Booking History: Implement a booking history feature for users to track their past bookings.",
+        "Screen Reader Compatibility: Ensure the application is compatible with screen readers for visually impaired users.",
+        "Keyboard Navigation: Implement keyboard navigation for users who prefer or need to use a keyboard instead of a mouse.",
+        "Social Sharing: Allow users to share their favorite characters and reservations on social media platforms."
+      ]
+    }
+  ]
+}
