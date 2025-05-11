@@ -59,12 +59,10 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5rem;
   font-weight: bold;
-  // text-align: center;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
-  // overflow: hidden;
   border: 2px solid $dark-black;
   background: $light-black;
   color: $white;
@@ -106,8 +104,6 @@
   height: auto;
   scroll-snap-align: start;
   border-radius: 5px;
-  // filter: $light-gray;
-  // filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 
