@@ -67,8 +67,6 @@
       position: absolute;
     }
     .container-fluid {
-      position: sticky;
-      top: 0;
-      z-index: 1;
+      height: 10vh;
     }
 }
