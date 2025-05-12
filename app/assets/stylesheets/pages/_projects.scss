@@ -61,6 +61,7 @@
   font-weight: bold;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
   position: relative;
   border: 2px solid $dark-black;
   background: $light-black;
@@ -69,7 +70,6 @@
   overflow-y: auto;
   scrollbar-color: $dark-black $dark-gray;
   scrollbar-width: thin;
-
 }
 
 .project-cover {
