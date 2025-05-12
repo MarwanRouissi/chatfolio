@@ -90,3 +90,11 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
+
+// Scroll enabled for mobile devices
+@media (max-width: 768px) {
+  body {
+    // height: 100%;
+    overflow-y: auto;
+  }
+}
