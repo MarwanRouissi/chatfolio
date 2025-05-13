@@ -91,10 +91,50 @@
   padding: 0.5rem;
 }
 
+.steps {
+  ul {
+    text-align: start;
+  }
+}
+
+.container-center {
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+  padding: 3rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.content {
+  overflow: auto;
+}
+
 // Scroll enabled for mobile devices
 @media (max-width: 768px) {
   body {
     // height: 100%;
     overflow-y: auto;
+  }
+
+  .container-center {
+    max-height: 400px;
+    padding: 0;
+  }
+
+  .content {
+    overflow: auto;
+  }
+
+  .links {
+    border-top: 1px solid $dark-gray;
+    padding: 2rem;
+    position: sticky;
+    bottom: 0px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
   }
 }

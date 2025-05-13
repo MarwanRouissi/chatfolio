@@ -13,26 +13,28 @@
     <%= render "form", message: @message %>
   </div>
 <% else %>
-  <div class="content">
-    <h1>Welcome to FolioChat</h1>
-    <p>I'm Folio, your virtual assistant dedicated to exploring Marwan Rouissi's profile.</p>
-    <p>To access detailed information about Marwan's skills, experiences, and projects, you need to sign up or log in first.</p>
-    <div class="steps">
+  <div class="container-center">
+    <div class="content">
+      <h1>Welcome to FolioChat</h1>
+      <p>I'm Folio, your virtual assistant dedicated to exploring Marwan Rouissi's profile.</p>
+      <p>To access detailed information about Marwan's skills, experiences, and projects, you need to sign up or log in first.</p>
+      <div class="steps">
         <h2>Why Sign Up or Log In?</h2>
         <ul>
             <li><strong>Full Access:</strong> Discover all available information on Marwan's profile.</li>
             <li><strong>Personalized Interactions:</strong> Get tailored responses to your specific questions.</li>
             <li><strong>Security:</strong> Ensure your interactions are secure and confidential.</li>
         </ul>
-    </div>
-    <p>Thank you for your interest in FolioChat! I'm looking forward to helping you discover Marwan Rouissi's profile.</p>
-    <div class="links">
-      <%= link_to new_user_registration_path, class: "btn btn-outline-secondary" do %>
-        <i class="fa-solid fa-user-plus"></i>
-      <% end %>
-      <%= link_to new_user_session_path, class: "btn btn-outline-secondary" do %>
-        <i class="fa-solid fa-right-to-bracket"></i>
-      <% end %>
-    </div>
+      </div>
+      <p>Thank you for your interest in FolioChat! I'm looking forward to helping you discover Marwan Rouissi's profile.</p>
+      </div>
+      <div class="links">
+        <%= link_to new_user_registration_path, class: "btn btn-outline-secondary" do %>
+          <i class="fa-solid fa-user-plus"></i>
+        <% end %>
+        <%= link_to new_user_session_path, class: "btn btn-outline-secondary" do %>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        <% end %>
+      </div>
   </div>
 <% end %>
