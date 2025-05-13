@@ -117,13 +117,12 @@
 // Scroll enabled for mobile devices
 @media (max-width: 768px) {
   body {
-    // height: 100%;
     overflow-y: auto;
   }
 
   .container-center {
     max-height: 400px;
-    padding: 0;
+    padding: 1rem;
   }
 
   .content {
