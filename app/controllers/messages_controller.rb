@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: %i[index]
   before_action :set_messages, only: %i[index create]
 
   def index
@@ -19,7 +20,7 @@ class MessagesController < ApplicationController
   private
 
   def set_messages
-    @messages = current_user.messages
+    current_user.present? ? @messages = current_user.messages : @messages = ""
   end
 
   def render_message(message)
