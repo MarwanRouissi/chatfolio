@@ -1,5 +1,3 @@
-require 'json'
-
 class ChatbotJob < ApplicationJob
   queue_as :default
 
@@ -7,15 +5,15 @@ class ChatbotJob < ApplicationJob
     @message = message
     mistral_response = client.chat(messages: messages_formatted_for_mistralai)
 
-    message.update(ai_answer: mistral_response.chat_completion)
+    ai_answer = ""
 
-    # Broadcast the updated question to the Turbo stream
-    Turbo::StreamsChannel.broadcast_update_to(
-      "message_#{message.id}",
-      target: "message_#{message.id}",
-      partial: "messages/message",
-      locals: { message: message }
-    )
+    mistral_response.chat_completion.split(" ", 10).each do |chunk|
+      ai_answer += "#{chunk} "
+      sleep(0.1)
+
+      message.update(ai_answer: ai_answer)
+      broadcast_message(message)
+    end
   end
 
   private
@@ -26,8 +24,16 @@ class ChatbotJob < ApplicationJob
     )
   end
 
+  def broadcast_message(message)
+    Turbo::StreamsChannel.broadcast_update_to(
+      "message_#{message.id}",
+      target: "message_#{message.id}",
+      partial: "messages/message",
+      locals: { message: message }
+    )
+  end
+
   def messages_formatted_for_mistralai
-    # profile_data = load_profile_data
     messages = @message.user.messages.last(3)
     format_messages(messages)
   end
